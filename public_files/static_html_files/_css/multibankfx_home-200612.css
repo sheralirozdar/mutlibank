@@ -2736,7 +2736,7 @@ section.mex-block-full .mex-img-cover {
         padding-bottom: 20px;
     }
     .about-page-awards .swiper-container img {
-        height: 40vw !important;
+        height: 14vw !important;
     }
     .about-page-awards .container {
         padding: 40px 0;
@@ -4671,4 +4671,22 @@ a.live-account-btn:hover > span.text {
     .contact-us .border-line:before {
         border-right: 0;
     }
+}
+
+
+.custom-card-img .card{
+    height: 200px !important;
+}
+@media (max-width:767px){
+    .about-custom-mobile{
+       display: none;
+
+    }
+    .index-platforms .container{
+        background: none;
+    }
+} 
+
+.card-img-overlay{
+    background: #1512124d;
 }
