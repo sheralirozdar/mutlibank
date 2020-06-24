@@ -900,10 +900,54 @@ section {
     color: #222;
     font-weight: 400;
 }
+@media (min-width: 441px) {
+    .slidebar{
+        display: inline-flex;
+    }
+} 
 @media (max-width: 441px) {
     .mex-content {
-        font-size: 18px;
+        
+            font-size: 20px;
     }
+    .start-trading-mobile-h{
+        position: relative;
+    bottom: 191px;
+    right: 23;
+    right: 72px;
+    height: 0px;
+
+    }
+    .start-trading-mobile-desc{
+        height: 0px;
+        position: relative;
+        top: 40;
+        bottom: 165px;
+        right: 30px;
+        width: 162px;
+        font-size: 16px;
+    }
+    .start-trading-mobile-btn-1{
+        position: relative;
+        right: 77px;
+        width: 142px;
+        height: 36px;
+    }
+    .start-trading-mobile-btn-2{
+        position: relative;
+        /* right: 0px; */
+        width: 156px;
+        left: 84px;
+        height: 36px;
+        bottom: 51px;
+
+    }.trade-with-confidence-card{
+        /* display:none !important; */
+    }
+    .sectiopn-trade-with-confidence {
+        display: none;
+    }
+    
 }
 .mex-content p {
     margin-bottom: 0;
@@ -1546,6 +1590,8 @@ section.mex-block-card-v.mex-qtr .mex-content {
             position: relative;
             bottom: 156px
            
+
+
     }
     .section-products{
         height: 97px;
@@ -1558,7 +1604,9 @@ section.mex-block-card-v.mex-qtr .mex-content {
     .d-sm-none{
         display: none;
     }
-
+            .hide-products{
+                display:none;
+            }
 }
 @media (max-width: 991px) {
     section.mex-block-full {
@@ -2268,12 +2316,13 @@ section.mex-block-full .mex-img-cover {
     display: inline-block;
     background: 0 0;
     position: fixed;
-    right: 5px;
+    right: 0px;
     top: 25%;
     z-index: 999;
-    visibility: hidden;
+   
     -webkit-transition: opacity 0.6s, visibility 0.6s;
     transition: opacity 0.6s, visibility 0.6s;
+    background: white;
 }
 .slidebar a {
     width: auto;
@@ -2330,6 +2379,42 @@ section.mex-block-full .mex-img-cover {
     min-width: auto;
     float: right;
     border: 0 !important;
+}
+
+/* mobile sliderbar */
+.slidebar-mobile{
+    width: auto;
+    height: auto;
+    /* display: inline-block; */
+    background: none;
+    position: fixed;
+    right: 5px;
+    top: 88%;
+    z-index: 1000;
+    width: 311px;
+    /* display: block; */
+    display: flex;
+    /* align-items: stretch; */
+    justify-content: space-around;
+    background: #fff;
+}
+.slidebar-mobile a {
+    width: auto;
+    height: 52px;
+    /* display: block; */
+    padding: 0;
+    border: 0 !important;
+    cursor: pointer;
+    border-radius: 0;
+    font-size: 20px;
+    -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    background: none;
+}
+.slidebar-mobile a span.btn {
+    padding: 0;
+    background: none !important;
+    /* margin: 0 0 3px 0; */
 }
 .get-a-all-btn .btn {
     background: #c3a118;
@@ -4707,6 +4792,16 @@ a.live-account-btn:hover > span.text {
     }
     .index-platforms .container{
         background: none;
+    }
+    .slidebar {
+        padding: 3px;;
+        top:92%;
+        width: 100%;
+        display: flex !important;
+        justify-content: space-around;
+    }
+   #widget-global-9hyenq21ztw{
+        display: none;
     }
 } 
 
