@@ -2775,7 +2775,7 @@ section.mex-block-full .mex-img-cover {
     display: none;
 }
 .about-page-awards.table-background_1 {
-    background: #070401;
+    /* background: #070401; */
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -2844,7 +2844,7 @@ section.mex-block-full .mex-img-cover {
         padding-bottom: 20px;
     }
     .about-page-awards .swiper-container img {
-        height: 14vw !important;
+        height: 40vw !important;
     }
     .about-page-awards .container {
         padding: 40px 0;
@@ -3053,7 +3053,7 @@ section.mex-block-full .mex-img-cover {
         top: 0;
         left: 50%;
         z-index: 99;
-        padding-top: 80px;
+        padding-top: 25px;
         transform: translateX(-50%);
     }
 }
@@ -4793,6 +4793,7 @@ a.live-account-btn:hover > span.text {
     .index-platforms .container{
         background: none;
     }
+
     .slidebar {
         padding: 3px;;
         top:92%;
@@ -4804,6 +4805,32 @@ a.live-account-btn:hover > span.text {
         display: none;
     }
 } 
+
+    #swiper-container-awards .mex-content{
+        margin-top: -0.5vw;
+    
+    }
+    /* #swiper-container-awards span{
+        transform: none;
+    } */
+    .about-page-awards .swiper-container span{
+        transition: none;
+    }
+    .about-page-awards .swiper-container{
+        height: 60vw !important;
+    }
+    .about-page-awards .mex-h3{
+        font-size: 21px;
+    }
+    .about-page-awards .mex-content{
+        font-size: 18px;
+    }
+    .about-page-awards .container{
+        padding-top: 20px;
+    }
+    }
+
+
 
 .card-img-overlay{
     background: #1512124d;
