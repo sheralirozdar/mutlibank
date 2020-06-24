@@ -1536,6 +1536,29 @@ section.mex-block-card-v.mex-qtr .mex-content {
     section.mex-block-card-v .mex-content {
         margin-bottom: 15px;
     }
+
+
+    .text-overflow-2{
+        display:none;
+    }
+    .card-content-mobile{
+        background-color: #00000075 !important;
+            position: relative;
+            bottom: 156px
+           
+    }
+    .section-products{
+        height: 97px;
+    }
+    .text-overflow-1{
+       
+        color:#f8f9fa;
+        font-size: 2.5vh;
+    }
+    .d-sm-none{
+        display: none;
+    }
+
 }
 @media (max-width: 991px) {
     section.mex-block-full {
