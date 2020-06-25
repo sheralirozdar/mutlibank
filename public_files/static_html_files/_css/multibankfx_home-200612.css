@@ -4799,23 +4799,21 @@ a.live-account-btn:hover > span.text {
 
     .slidebar {
         padding: 3px;;
-        top:92%;
+        top:91%;
         width: 100%;
         display: flex !important;
         justify-content: space-around;
     }
-   #widget-global-9hyenq21ztw{
+   #widget-global-9hyenq21ztw {
         display: none;
     }
-} 
+
 
     #swiper-container-awards .mex-content{
         margin-top: -0.5vw;
     
     }
-    /* #swiper-container-awards span{
-        transform: none;
-    } */
+  
     .about-page-awards .swiper-container span{
         transition: none;
     }
