@@ -4800,7 +4800,14 @@ a.live-account-btn:hover > span.text {
         background: none;
     }
 
+
     .slidebar2{
+        position: fixed;
+        padding: 3px;
+        background-color: #fff;
+        top:92%;
+
+   .slidebar2{
         position: fixed;
         padding: 3px;
         background-color: #fff;
@@ -4812,18 +4819,18 @@ a.live-account-btn:hover > span.text {
     .slidebar{
         display:none;
     }
-   #widget-global-9hyenq21ztw{
+
+   #widget-global-9hyenq21ztw {
+
         display: none;
     }
-} 
+
 
     #swiper-container-awards .mex-content{
         margin-top: -0.5vw;
     
     }
-    /* #swiper-container-awards span{
-        transform: none;
-    } */
+  
     .about-page-awards .swiper-container span{
         transition: none;
     }
@@ -4845,4 +4852,14 @@ a.live-account-btn:hover > span.text {
 
 .card-img-overlay{
     background: #1512124d;
+}
+.custom-platform-bg{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    z-index: 0;
+     opacity: 0.1;
 }
