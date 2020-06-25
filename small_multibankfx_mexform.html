@@ -1653,12 +1653,14 @@ MultiBank Group offers a full white label technology package for institutional c
                 <div class="mex-content mex-m-b-15">
                   <strong>Open an account &amp; start trading today!</strong>
                 </div>
-                <a href="https://www.multibankfx.com/account/live-account"
-                  class="btn btn-mex-red mex-m-r-15 mex-m-b-15 col-md-6 col-xs-12 start-trading-mobile-btn-1"><i class="fa fa-user mex-m-r-5"
-                    aria-hidden="true"></i>Live Account</a>
-                <a href="https://www.multibankfx.com/account/demo-account"
-                  class="btn btn-mex-blue mex-m-r-15 mex-m-b-15 col-md-6 col-xs-12 start-trading-mobile-btn-2"><i class="fa fa-desktop mex-m-r-5"
-                    aria-hidden="true"></i>Demo Account</a>
+                <div class="row>">
+                  <a href="https://www.multibankfx.com/account/live-account"
+                    class="btn btn-mex-red mex-m-r-15 mex-m-b-15 col-md-6  start-trading-mobile-btn-1 col-6"><i class="fa fa-user mex-m-r-5"
+                      aria-hidden="true"></i>Live Account</a>
+                  <a href="https://www.multibankfx.com/account/demo-account"
+                    class="btn btn-mex-blue mex-m-r-15 mex-m-b-15 col-md-6  start-trading-mobile-btn-2 col-6"><i class="fa fa-desktop mex-m-r-5"
+                      aria-hidden="true"></i>Demo Account</a>
+                  </div>
               </div>
             </div>
           </div>
@@ -3677,9 +3679,15 @@ Choose from a selection of instant, simple and secure payment options for deposi
         <img alt="Chat" data-entity-type="" data-entity-uuid="" src="/public_files/static_html_files/_medias/chat-mb.png" width="50">
         </a>
     </div> -->
+    <div class="slidebar"><a class="get-a-all-btn" href="https://www.multibankfx.com/contact"><span class="text" style="display: none;">Contact Us</span>
+      <span class="btn"> <i class="fa fa-phone"> </i> </span> </a> <a class="live-account-btn" href="https://www.multibankfx.com/account/live-account"> <span class="text" style="display: none;">Live
+      Account</span> <span class="btn"> <i class="fa fa-user"> </i> </span>
+      </a> <a class="demo-account-btn" href="https://www.multibankfx.com/account/demo-account"> <span class="text" style="display: none;">Demo Account</span> <span class="btn "> <i class="fa fa-desktop"> </i> </span> </a>
+      <a class="ib-registration-btn" href="https://www.multibankfx.com/partnership/introducing-brokers#introducing-brokers-form"> <span class="text">IB
+      
+      Registration</span> <span class="btn" style="font-family: 'icomoon' !important; font-size: 20px"> <i class="fa fa-users"></i> </span> </a></div>
 
-
-  <div class="slidebar">
+  <div class="slidebar2">
     <!-- <a class="get-a-all-btn" href="https://www.multibankfx.com/contact"><span class="text"
         style="display: none;">Contact Us</span>
 
@@ -3906,12 +3914,12 @@ Choose from a selection of instant, simple and secure payment options for deposi
         scroll = $(window).scrollTop();
        
 
-      if (scroll >= 700) {
+      if (scroll >= 700 ) {
         sticky.addClass('fixed');
        $('.slidebar').css("visibility", "visible");
      
       }
-      else {
+      else if(scroll <= 700  || $(window).width() > 442)  {
         sticky.removeClass('fixed');
          $('.slidebar').css("visibility", "hidden");
         

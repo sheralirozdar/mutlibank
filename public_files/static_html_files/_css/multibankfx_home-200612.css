@@ -913,7 +913,7 @@ section {
     .start-trading-mobile-h{
         position: relative;
         bottom: 191px;
-        right: 110px;
+        right: 30%;
   
         height: 0px;
 
@@ -927,21 +927,22 @@ section {
         width: 162px;
         font-size: 16px;
     }
-    .start-trading-mobile-btn-1{
+    /* .start-trading-mobile-btn-1{
         position: relative;
         right: -4%;
         width: 142px;
         height: 36px;
-    }
-    .start-trading-mobile-btn-2{
+    } */
+    /* .start-trading-mobile-btn-2
+    {
         position: relative;
         /* right: 0px; */
-        width: 156px;
+        /* width: 156px;
         right :1%;
         height: 36px;
-        bottom: 0px;
+        bottom: 0px; */
 
-    }
+    /* } */ 
 
     .dnone-mobile{
         display: none !important;
@@ -4799,12 +4800,17 @@ a.live-account-btn:hover > span.text {
         background: none;
     }
 
-    .slidebar {
-        padding: 3px;;
+    .slidebar2{
+        position: fixed;
+        padding: 3px;
+        background-color: #fff;
         top:92%;
         width: 100%;
         display: flex !important;
         justify-content: space-around;
+    }
+    .slidebar{
+        display:none;
     }
    #widget-global-9hyenq21ztw{
         display: none;
