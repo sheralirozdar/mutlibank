@@ -583,17 +583,21 @@ $(function() {
     function toggleSideBar() {
          var scrollTop = $(window).scrollTop();
          
+      
         if ( scrollTop >= 200 && window.innerWidth >= 768 ) {
             $('.slidebar').fadeIn();
         }
-        
-       
         else if (window.innerWidth <= 768 ){
       
         }
         else {
             $('.slidebar').fadeOut();
         }
+       
+        // else if (window.innerWidth <= 768 ){
+      
+        // }
+       
     }
 
     function toggleHeader() {
