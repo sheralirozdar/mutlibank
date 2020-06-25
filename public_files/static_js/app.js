@@ -586,6 +586,8 @@ $(function() {
         if ( scrollTop >= 200 && window.innerWidth >= 768 ) {
             $('.slidebar').fadeIn();
         }
+        
+       
         else if (window.innerWidth <= 768 ){
       
         }
