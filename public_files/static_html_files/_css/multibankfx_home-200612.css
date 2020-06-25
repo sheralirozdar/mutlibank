@@ -927,22 +927,20 @@ section {
         width: 162px;
         font-size: 16px;
     }
-    /* .start-trading-mobile-btn-1{
-        position: relative;
-        right: -4%;
-        width: 142px;
-        height: 36px;
-    } */
-    /* .start-trading-mobile-btn-2
-    {
-        position: relative;
-        /* right: 0px; */
-        /* width: 156px;
-        right :1%;
-        height: 36px;
-        bottom: 0px; */
 
-    /* } */ 
+    .live-account-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mex-m-r-15 {
+        margin-right: 0px;
+    }
+    .start-trading-mobile-btn-1{
+        width: 49%;
+    }
+    .start-trading-mobile-btn-2{
+       width: 49%;
+    }
 
     .dnone-mobile{
         display: none !important;
@@ -1198,8 +1196,8 @@ section {
     .btn.btn-mex-blue,
     .btn.btn-mex-gray,
     .btn.btn-mex-red {
-        padding: 10px 15px;
-        font-size: 14px;
+        padding: 10px 6px;
+        font-size: 12px;
         line-height: 14px;
         min-width: auto;
     }
@@ -1425,7 +1423,7 @@ h4 {
     margin-bottom: 20px !important;
 }
 .mex-m-r-15 {
-    margin-right: 15px !important;
+    margin-right: 15px;
 }
 .mex-m-t-15 {
     margin-top: 15px !important;
