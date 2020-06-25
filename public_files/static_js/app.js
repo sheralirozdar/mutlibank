@@ -585,7 +585,11 @@ $(function() {
          
         if ( scrollTop >= 200 && window.innerWidth >= 768 ) {
             $('.slidebar').fadeIn();
-        } else {
+        }
+        else if (window.innerWidth <= 768 ){
+      
+        }
+        else {
             $('.slidebar').fadeOut();
         }
     }
