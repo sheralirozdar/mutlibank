@@ -912,10 +912,10 @@ section {
     }
     .start-trading-mobile-h{
         position: relative;
-    bottom: 191px;
-    right: 23;
-    right: 72px;
-    height: 0px;
+        bottom: 191px;
+        right: 110px;
+  
+        height: 0px;
 
     }
     .start-trading-mobile-desc{
@@ -923,13 +923,13 @@ section {
         position: relative;
         top: 40;
         bottom: 165px;
-        right: 30px;
+        right: 20px;
         width: 162px;
         font-size: 16px;
     }
     .start-trading-mobile-btn-1{
         position: relative;
-        right: 77px;
+        right: -4%;
         width: 142px;
         height: 36px;
     }
@@ -937,15 +937,17 @@ section {
         position: relative;
         /* right: 0px; */
         width: 156px;
-        left: 84px;
+        right :1%;
         height: 36px;
-        bottom: 51px;
+        bottom: 0px;
 
-    }.trade-with-confidence-card{
-        /* display:none !important; */
+    }
+
+    .dnone-mobile{
+        display: none !important;
     }
     .sectiopn-trade-with-confidence {
-        display: none;
+        /* display: none; */
     }
     
 }
