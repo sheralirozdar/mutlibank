@@ -1619,7 +1619,7 @@
             </a>
           </section>
         </div>
-        <div class="col-4 col-md-6 col-lg-3 mex-m-b-30">
+        <div class="col-4 col-md-6 col-lg-3 mex-m-b-30 d-none d-md-block">
           <section class="mex-block-card-v mex-qtr box-animate section-products">
             <a href="https://www.multibankfx.com/partnership/prime-of-primes">
               <div class="card-img-box">
@@ -1805,7 +1805,7 @@
     </div>
   </section>
   <section class="bg-white p0 index-platforms d-md-none">
-    <img class=" lazyload custom-platform-bg" data-src="/public_files/static_html_files/_medias/home_platforms_bg.webp" >
+    <img class=" lazyload custom-platform-bg" data-src="/public_files/static_html_files/_medias/home_platforms_bg.webp" src="/public_files/static_html_files/_medias/home_platforms_bg.webp" >
     <div class="container mex-p-t-80 mex-p-b-80">
     <div class="row">
     <div class="col-xl-10 mx-auto col-lg-12 text-center mex-m-b-15 ">
@@ -3882,7 +3882,7 @@ Choose from a selection of instant, simple and secure payment options for deposi
       
       Registration</span> <span class="btn" style="font-family: 'icomoon' !important; font-size: 20px"> <i class="fa fa-users"></i> </span> </a></div>
 
-  <div class="slidebar2">
+  <div class="slidebar2 lc-1scef e16i86ec0" style="display: none;">
     <!-- <a class="get-a-all-btn" href="https://www.multibankfx.com/contact"><span class="text"
         style="display: none;">Contact Us</span>
 
@@ -3915,7 +3915,7 @@ Choose from a selection of instant, simple and secure payment options for deposi
         src="./public_files/static_html_files/_medias/email-mb.png" width="50">
     </a>
     <a class="ib-registration-btn chat-btn"
-      onclick="if (!window.__cfRLUnblockHandlers) return false; LC_API.open_chat_window();return false;">
+      onclick="openChat()">
       <img alt="Chat" data-entity-type="" data-entity-uuid="" src="./public_files/static_html_files/_medias/chat-mb.png"
         width="50">
     </a>
@@ -3923,6 +3923,13 @@ Choose from a selection of instant, simple and secure payment options for deposi
 
   <script src="https://www.multibankfx.com/public_files/static_js/swiper-4.3.5.min.js"></script>
   <script>
+    $(window).resize(function (){
+      if ($(window).width() < 412) {
+            console.log('hiii');
+      } else {
+        setTimeout('include_live_chat()', 1000)
+      }
+    });
 
 
     $(document).ready(function () {
@@ -4306,8 +4313,15 @@ Choose from a selection of instant, simple and secure payment options for deposi
   </script>
   <!-- <iframe src="./small_multibankfx_files_webp/saved_resource.html" style="display: none;"></iframe> -->
   <script type="text/javascript"
-    id="">!function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js"); fbq("init", "1182326445190388"); fbq("track", "PageView");</script>
-  <noscript><img height="1" width="1" style="display:none"
+    id="">!function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () 
+      { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, 
+      b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], 
+      c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0],
+       d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+        fbq("init", "1182326445190388"); fbq("track", "PageView");</script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+
       src="https://www.facebook.com/tr?id=1182326445190388&amp;ev=PageView&amp;noscript=1"></noscript>
 
 
@@ -4327,14 +4341,46 @@ Choose from a selection of instant, simple and secure payment options for deposi
         s.parentNode.insertBefore(lc, s);
       })();
     }
-    $(document).ready(function () {
+   
+    $(window).resize(function (){
       if ($(window).width() < 412) {
-
+        include_live_chat();
+        setTimeout($(".lc-1ozfevo.eqd5v0k0.lc-1xypejv-enter-done, #chat-widget-container").hide(), 1000)   
       } else {
-        setTimeout('include_live_chat()', 10000)
+        include_live_chat();
+        $(".lc-1ozfevo.eqd5v0k0.lc-1xypejv-enter-done, #chat-widget-container").show()
       }
-          
     });
+
+    $(document).ready(function () {
+
+      if ($(window).width() < 412) {
+        include_live_chat();
+        setTimeout(()=>{$(".lc-1ozfevo.eqd5v0k0.lc-1xypejv-enter-done, #chat-widget-container").hide();
+        $(".lc-zukybo.ek650k30").css("opacity","-1");
+      }, 5000);
+      $(".e1mwfyk10.lc-i29k1j.e1m5b1js0").on("click",()=>{
+        debugger
+        setTimeout(()=>{$(".lc-1ozfevo.eqd5v0k0.lc-1xypejv-enter-done, #chat-widget-container").hide()},5000)
+      })
+       
+      } else {
+        include_live_chat();
+        $(".lc-1ozfevo.eqd5v0k0.lc-1xypejv-enter-done, #chat-widget-container").show();
+      }
+    });
+
+    openChat=()=>{
+      $("#chat-widget-container").show();
+      LC_API.open_chat_window();
+    }
+
+    
+  window.LC_API.on
+    if(!LC_API.chat_window_open)
+    {
+      $("#chat-widget-container").hide()
+    }
   </script>
   <script src="./public_files/static_js/jquery.validate.min.js" type="text/javascript"></script>
   <script src="./public_files/static_js/intlTelInput.min.js" type="text/javascript"></script>
