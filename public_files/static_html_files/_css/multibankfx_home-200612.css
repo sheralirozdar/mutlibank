@@ -948,7 +948,12 @@ section {
     .sectiopn-trade-with-confidence {
         /* display: none; */
     }
-    
+    .lc-1ozfevo.eqd5v0k0.lc-1xypejv-enter-done{
+        opacity: -1 !important;
+    }
+    #chat-widget-container{
+        opacity: -1 !important;
+    }
 }
 .mex-content p {
     margin-bottom: 0;

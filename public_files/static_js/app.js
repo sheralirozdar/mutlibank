@@ -597,6 +597,8 @@ $(function() {
         // else if (window.innerWidth <= 768 ){
       
         // }
+
+        
        
     }
 
