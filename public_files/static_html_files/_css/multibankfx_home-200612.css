@@ -4808,6 +4808,7 @@ a.live-account-btn:hover > span.text {
         width: 100%;
         display: flex !important;
         justify-content: space-around;
+        z-index: 3;
     }
     .slidebar{
         display:none;
