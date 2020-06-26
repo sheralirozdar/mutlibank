@@ -4172,73 +4172,79 @@ Choose from a selection of instant, simple and secure payment options for deposi
       $('.hide-menu-custom').hide();
     });
 
-    $('.nav-mobile-about').click(function () {
-      let displayStatus = document.getElementById("list-about");
-      if (displayStatus.style.display === "none") {
-        displayStatus.style.display = "block";
+    $('.nav-mobile-about').click(function () {   
+     let display = $("#list-about").css('display').toString();
+      if (display == "none") {
+        $("#list-about").css("display","block!important");
+       
       }
       else {
-        displayStatus.style.display = "none";
+        // $("#list-about").css('display',"none");
       }
     });
 
     $('.nav-mobile-product').click(function () {
-      let displayStatus = document.getElementById("list-product");
-      if (displayStatus.style.display === "none") {
-        displayStatus.style.display = "block";
+      let display = $("#list-product").css('display').toString()
+      if (display == "none") {
+        $("#list-product").css("display","block!important");
       }
       else {
-        displayStatus.style.display = "none";
+        // displayStatus.style.display = "none";
       }
     });
 
     $('.nav-mobile-platform').click(function () {
-      let displayStatus = document.getElementById("list-platform");
-      if (displayStatus.style.display === "none") {
-        displayStatus.style.display = "block";
+      let display = $("#list-platform").css('display').toString()
+      if (display == "none") {
+        $("#list-platform").css("display","block!important");
       }
       else {
-        displayStatus.style.display = "none";
+        // displayStatus.style.display = "none";
       }
+      
     });
 
     $('.nav-mobile-account').click(function () {
-      let displayStatus = document.getElementById("list-account");
-      if (displayStatus.style.display === "none") {
-        displayStatus.style.display = "block";
+      let display = $("#list-account").css('display').toString()
+      if (display == "none") {
+        $("#list-account").css("display","block!important");
       }
       else {
-        displayStatus.style.display = "none";
+        // displayStatus.style.display = "none";
       }
+
+  
     });
 
     $('.nav-mobile-tool').click(function () {
-      let displayStatus = document.getElementById("list-tool");
-      if (displayStatus.style.display === "none") {
-        displayStatus.style.display = "block";
+      let display = $("#list-tool").css('display').toString()
+      if (display == "none") {
+        $("#list-tool").css("display","block!important");
       }
       else {
-        displayStatus.style.display = "none";
+        // displayStatus.style.display = "none";
       }
+      
     });
 
     $('.nav-mobile-partnership').click(function () {
-      let displayStatus = document.getElementById("list-partnership");
-      if (displayStatus.style.display === "none") {
-        displayStatus.style.display = "block";
+      let display = $("#list-partnership").css('display').toString()
+      if (display == "none") {
+        $("#list-partnership").css("display","block!important");
       }
       else {
-        displayStatus.style.display = "none";
+        // displayStatus.style.display = "none";
       }
+     
     });
 
     $('.nav-mobile-lang').click(function () {
-      let displayStatus = document.getElementById("list-language");
-      if (displayStatus.style.display === "none") {
-        displayStatus.style.display = "block";
+      let display = $("#list-language").css('display').toString()
+      if (display == "none") {
+        $("#list-language").css("display","block!important");
       }
       else {
-        displayStatus.style.display = "none";
+        // displayStatus.style.display = "none";
       }
     });
 
