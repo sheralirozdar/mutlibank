@@ -879,8 +879,11 @@ section {
     overflow: hidden;
 }
 @media (max-width: 790px) {
-    section {
-        padding: 40px 0;
+    .twc-section {
+        padding: 30px 0;
+    }
+    section{
+        padding: 0;
     }
 }
 @media (min-width: 1366px) {
@@ -914,9 +917,7 @@ section {
         position: relative;
         bottom: 191px;
         right: 30%;
-  
         height: 0px;
-
     }
     .start-trading-mobile-desc{
         height: 0px;
@@ -1371,6 +1372,12 @@ h4 {
     }
 }
 @media (max-width: 441px) {
+    .card-content-mobile {
+        background-color: #1e32a3 !important;
+        position: relative;
+        bottom: 133px;
+        text-align: center;
+    }
     .mex-h1 {
         font-size: 28px;
     }
@@ -1378,6 +1385,13 @@ h4 {
         font-size: 22px;
         line-height: 1.2;
         font-weight: 400;
+    }
+    .card-content-mobile .mex-h3{
+        font-size: 16px !important;
+        line-height: 30px !important;
+        font-weight: 300 !important;
+        font-family: oswald, Helvetica, Arial, sans-serif ;
+        color: white;
     }
 }
 .mex-p-l-0 {
@@ -1587,18 +1601,20 @@ section.mex-block-card-v.mex-qtr .mex-content {
         margin-bottom: 15px;
     }
 
+/* .card-content-mobile {
+        background-color: #1e32a3 !important;
+        position: relative;
+        bottom: 133px;
+        text-align: center;
+    } */
+   
+    
+    
 
     .text-overflow-2{
         display:none;
     }
-    .card-content-mobile{
-        background-color: #00000075 !important;
-            position: relative;
-            bottom: 156px
-           
-
-
-    }
+    
     .section-products{
         height: 97px;
     }
@@ -4795,6 +4811,28 @@ a.live-account-btn:hover > span.text {
     height: 200px !important;
 }
 @media (max-width:767px){
+    section.mex-block-card-v {
+        padding: 0;
+        width: 100%;
+        max-height: 200px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 0 15px 3px;
+        transform: translate3d(0, 0, 0);
+        transition: transform 0.3s ease-in-out 0s, box-shadow 0.3s ease-in-out 0s;
+    }
+    section.mex-block-card-v.mex-qtr .card-img {
+        vertical-align: middle;
+        object-fit: cover;
+        width: 100%;
+        height: 110px;
+    }
+    section.mex-block-card-v.mex-qtr .card-content{
+        padding: 0 ;
+    }
+    .mb-platform-icon{
+        width: 40px;
+        height:40px;
+    }
+
     .about-custom-mobile{
        display: none;
 
@@ -4802,7 +4840,25 @@ a.live-account-btn:hover > span.text {
     .index-platforms .container{
         background: none;
     }
-
+    .card-content-mobile {
+        background-color: #1e32a3 !important;
+        position: absolute;
+        bottom: 0;
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+    .mex-block-card-v{
+        height: 110px;
+    }
+    .card-content-mobile .mex-h3{
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 400;
+        font-family: oswald, Helvetica, Arial, sans-serif;
+        color: white;
+    }
+    
 
     
    .slidebar2{
