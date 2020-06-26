@@ -948,7 +948,12 @@ section {
     .sectiopn-trade-with-confidence {
         /* display: none; */
     }
-    
+    /* .lc-1ozfevo.eqd5v0k0.lc-1xypejv-enter-done{
+        opacity: -1 !important;
+    }
+    #chat-widget-container{
+        opacity: -1 !important;
+    } */
 }
 .mex-content p {
     margin-bottom: 0;
@@ -4802,12 +4807,13 @@ a.live-account-btn:hover > span.text {
     
    .slidebar2{
         position: fixed;
-        padding: 3px;
+        padding: 6px 0;
         background-color: #fff;
-        top:92%;
+        bottom: 0;
         width: 100%;
         display: flex !important;
         justify-content: space-around;
+        z-index: 3;
     }
     .slidebar{
         display:none;
