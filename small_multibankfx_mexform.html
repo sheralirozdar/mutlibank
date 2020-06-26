@@ -3632,15 +3632,15 @@ Choose from a selection of instant, simple and secure payment options for deposi
               </li>
               <li class="ForIts">
                 <div class="mex-h3 mex-m-t-20 ">Live Chat</div>
-                <a href="#"
-                  onclick="if (!window.__cfRLUnblockHandlers) return false; LC_API.open_chat_window();return false;">
+                <a href="#" 
+                  onclick="LC_API.open_chat_window();">
                   <img class="home_contact_us_chat_now lazyload"
                     data-src="https://ae.multibankfx.com/public_files/images/common/footer_btn_chat_now.png" alt="chat"
                     data-entity-type="" data-entity-uuid=""
                     data-cfsrc="./public_files/images/common/footer_btn_chat_now.png">
               </li>
             </ul>
-            <div class="d-flex d-md-none row py-4 row-eq-height">
+            <div class="d-none d-lg-flex row py-4 row-eq-height">
               <div class="col-4 text-center mx-auto">
                 <div class="mex-h3 mb-2 footer-mb-social-media">EMAIL US</div>
                 <a href="mailto:infome@multibankfx.com">
@@ -3653,7 +3653,7 @@ Choose from a selection of instant, simple and secure payment options for deposi
               <div class="col-4 text-center mx-auto">
                 <div class="mex-h3 mb-2 footer-mb-social-media">LIVE CHAT</div>
                 <a href="#"
-                  onclick="if (!window.__cfRLUnblockHandlers) return false; if (!window.__cfRLUnblockHandlers) return false; if (!window.__cfRLUnblockHandlers) return false; LC_API.open_chat_window();return false;">
+                  onclick="LC_API.open_chat_window();">
                   <img class="footer-contact-ic lazyload"
                     data-src="https://ae.multibankfx.com/public_files/images/common/icon_contact_wechat.png"
                     data-cfsrc="./public_files/images/common/icon_contact_wechat.png">
@@ -4354,35 +4354,61 @@ Choose from a selection of instant, simple and secure payment options for deposi
 
     $(document).ready(function () {
 
-      if ($(window).width() < 412) {
-        include_live_chat();
-        setTimeout(()=>{$(".lc-1ozfevo.eqd5v0k0.lc-1xypejv-enter-done, #chat-widget-container").hide();
-        $(".lc-zukybo.ek650k30").css("opacity","-1");
-      }, 5000);
-      $(".e1mwfyk10.lc-i29k1j.e1m5b1js0").on("click",()=>{
-        debugger
-        setTimeout(()=>{$(".lc-1ozfevo.eqd5v0k0.lc-1xypejv-enter-done, #chat-widget-container").hide()},5000)
-      })
-       
-      } else {
-        include_live_chat();
-        $(".lc-1ozfevo.eqd5v0k0.lc-1xypejv-enter-done, #chat-widget-container").show();
+        url = new URL(window.location.href);
+  if (!url.searchParams.get('is_iframe')) {
+    window.__lc = window.__lc || {};
+    window.__lc.license = 3413162;
+    window.__lc.chat_between_groups = false;
+    window.__lc.group = 2;
+    (function () {
+      var lc = document.createElement('script');
+      lc.type = 'text/javascript';
+      lc.async = true;
+      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(lc, s);
+      window.LC_API = window.LC_API || {};
+      if (window.innerWidth < 640) {
+        LC_API.on_before_load = function() {
+          LC_API.hide_chat_window();
+        }
+        LC_API.on_chat_window_minimized = function() {
+          setTimeout(function() {
+            LC_API.hide_chat_window();
+          }, 200);
+        }
       }
-    });
+    })();
+}});
+      //   include_live_chat();
+      //   setTimeout(()=>{$(".lc-1ozfevo.eqd5v0k0.lc-1xypejv-enter-done, #chat-widget-container").hide();
+      // }, 5000);
+      // $(".e1mwfyk10.lc-i29k1j.e1m5b1js0").on("click",()=>{
+      //   setTimeout(()=>{$(".lc-1ozfevo.eqd5v0k0.lc-1xypejv-enter-done, #chat-widget-container").hide()},5000)
+      // })
+       
+      // } else {
+      //   include_live_chat();
+      //   $(".lc-1ozfevo.eqd5v0k0.lc-1xypejv-enter-done, #chat-widget-container").show();
+      // }
+    // });
 
     openChat=()=>{
       $("#chat-widget-container").show();
       LC_API.open_chat_window();
     }
 
+
+  
+
+    // LC_API.window.LC_API.on_chat_window_hidden(function (){
+    //   debugger
+    //     setTimeout(()=>{$(".lc-1ozfevo.eqd5v0k0.lc-1xypejv-enter-done, #chat-widget-container").hide()},5000)
+    //   })
+
     
-  window.LC_API.on
-    if(!LC_API.chat_window_open)
-    {
-      $("#chat-widget-container").hide()
-    }
   </script>
-  <script src="./public_files/static_js/jquery.validate.min.js" type="text/javascript"></script>
+  <script src="./public_files/static_js/jquery.validate.min.js" type="text/javascript"></script> 
   <script src="./public_files/static_js/intlTelInput.min.js" type="text/javascript"></script>
   <script src="./public_files/static_js/app.js" type="text/javascript"></script>
   <script src="./public_files/static_js/app_home.js" type="text/javascript"></script>
